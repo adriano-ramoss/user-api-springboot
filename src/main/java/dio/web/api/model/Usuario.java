@@ -1,50 +1,38 @@
 package dio.web.api.model;
 
 public class Usuario {
-	private Integer id;
-	private String nome;
-	private String password;
+    private String login;
+    private String password;
 
-	public Usuario() {
-	}
+    public Usuario() {
+    }
 
-	public Usuario(Integer id, String nome, String password) {
-		this.id = id;
-		this.nome = nome;
-		this.password = password;
-	}
+    public Usuario(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
 
-	public Usuario(String nome, String password) {
-		this.nome = nome;
-		this.password = password;
-	}
+    public String getLogin() {
+        return login;
+    }
 
-	public Integer getId() {
-		return id;
-	}
+    public void setLogin(String login) {
+        this.login = login;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	@Override
-	public String toString() {
-		return "Usuario [id=" + id + ", nome=" + nome + ", password=" + password + "]";
-	}
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }
