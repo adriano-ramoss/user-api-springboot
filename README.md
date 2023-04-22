@@ -31,3 +31,7 @@ Clique em "Send".<br>
 
 Essa é uma API REST simples que não possui conexão com um banco de dados. Ela foi desenvolvida apenas para exemplificar a lógica de inserção
 e exclusão de usuários em uma API REST usando o Spring Boot.
+<br>
+
+###Referência
+https://glysns.gitbook.io/spring-framework/spring-web/introducao
